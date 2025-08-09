@@ -9,13 +9,49 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  height: 100vh;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
 }
 
-.hero,
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main,
 footer {
   background-color: #1F2937;
+}
+
+main,
+.action-call,
+footer {
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+main {
+  padding: 8px 64px 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header .logo {
@@ -23,21 +59,109 @@ header .logo {
   color: #F9FAF8;
 }
 
+header .links {
+  font-size: 18px;
+
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  gap: 16px;
+}
+
+.hero {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+
+.hero img {
+  max-width: 45%;
+  min-width: 45%;
+  height: auto;
+  flex: 1 1 auto;
+  border-radius: 12px;
+}
+
+.hero .left {
+  flex: 2 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
 .hero .main-text {
   font-size: 48px;
   font-weight: 900;
-  color: 48px;
+  color: #F9FAF8;
 }
 
 .hero .secondary-text {
   font-size: 18px;
-  color: #E5E7EB;
 }
 
-button.signup {
+button.contact {
+  max-width: 150px;
   background-color: #3882F6;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 12px;
+}
+
+.figures {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.figures h2 {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.fig-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.fig-container img {
+  max-height: 250px;
+  width: auto;
+  border: 3px solid #3882F6;
+  color: #1F2937;
+}
+
+.fig-container figcaption {
+  text-align: center;
+}
+
+.quote {
+  padding: 32px;
+  background-color: #E5E7EB;
+}
+
+.quote .text {
+  font-size: 36px;
+  font-weight: lighter;
+  font-style: italic;
+  color: #1F2937;
 }
 
 .action-call .box {
   background-color: #3882F6;
+}
+
+.action-call button.contact {
+  border: 1px solid #E5E7EB;
+}
+
+footer {
+  margin-top: auto;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
