@@ -23,6 +23,15 @@ ol {
   padding: 0;
 }
 
+i {
+  margin-right: 6px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 body {
   height: 100vh;
   display: flex;
@@ -35,11 +44,12 @@ footer {
 }
 
 main,
-.action-call,
 footer {
   font-size: 18px;
   color: #E5E7EB;
 }
+
+
 
 main {
   padding: 8px 64px 56px;
@@ -61,29 +71,24 @@ header .logo {
 
 header .links {
   font-size: 18px;
-
   list-style: none;
-  text-decoration: none;
   display: flex;
   gap: 16px;
 }
 
 .hero {
   display: flex;
-  gap: 48px;
+  gap: 10vw;
   align-items: center;
 }
 
 .hero img {
-  max-width: 45%;
-  min-width: 45%;
+  max-width: 25%;
   height: auto;
-  flex: 1 1 auto;
   border-radius: 12px;
 }
 
 .hero .left {
-  flex: 2 1 auto;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -93,18 +98,23 @@ header .links {
   font-size: 48px;
   font-weight: 900;
   color: #F9FAF8;
+  min-width: 0%;
+  flex: 1;
 }
 
 .hero .secondary-text {
   font-size: 18px;
+  flex: 2;
 }
 
 button.contact {
+  color: #F9FAF8;
   max-width: 150px;
-  background-color: #3882F6;
   padding: 8px 24px;
+  background-color: #3882F6;
   border: none;
   border-radius: 12px;
+  flex: none;
 }
 
 .figures {
@@ -139,8 +149,13 @@ button.contact {
 }
 
 .quote {
-  padding: 32px;
+  padding: 64px 128px;
   background-color: #E5E7EB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
 .quote .text {
@@ -150,12 +165,40 @@ button.contact {
   color: #1F2937;
 }
 
+.quote .author {
+  font-size: 24px;
+  align-self: flex-end;
+}
+
+.action-call {
+  padding: 48px 32px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
 .action-call .box {
+  padding: 24px 32px;
   background-color: #3882F6;
+  border-radius: 6px;
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.action-call .main-text {
+  font-size: 16;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.action-call .secondary-text {
+  font-size: 12px;
 }
 
 .action-call button.contact {
-  border: 1px solid #E5E7EB;
+  border: 2px solid #E5E7EB;
+  color: white;
 }
 
 footer {
